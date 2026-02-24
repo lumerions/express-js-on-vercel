@@ -20,7 +20,6 @@ async function getMongoClient() {
   }
   return mongo_client;
 }
-console.log("Connected to MongoDB")
 
 app.get('/healthz', (req, res) => {
   res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() })
