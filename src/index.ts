@@ -21,10 +21,6 @@ async function getMongoClient() {
   return mongo_client;
 }
 
-app.get('/healthz', (req, res) => {
-  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() })
-})
-
 app.post("/update-value", async (req, res) => {
     const client = await getMongoClient(); 
 
