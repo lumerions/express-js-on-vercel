@@ -11,7 +11,6 @@ import Noblox from "noblox.js";
 const { getGamePassProductInfo, getUsernameFromId, getThumbnails } = Noblox;
 const app = express()
 app.use(express.json()) 
-
 let mongo_client 
 
 async function getMongoClient() {
