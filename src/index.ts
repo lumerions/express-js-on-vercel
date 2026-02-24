@@ -9,7 +9,6 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 import Noblox from "noblox.js";
 const { getGamePassProductInfo, getUsernameFromId, getThumbnails } = Noblox;
-
 const app = express()
 app.use(express.json()) 
 
